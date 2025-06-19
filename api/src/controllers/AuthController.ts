@@ -44,7 +44,7 @@ export class AuthController {
       nome: newUser.nome,
     });
   }
-
+  
   static async login(request: FastifyRequest, reply: FastifyReply) {
     const loginSchema = z.object({
       email: z.string().email(),
