@@ -2,9 +2,8 @@
   "name": "api",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "ts-node src/server.ts --no-warnings"
+    "dev": "ts-node-dev --respawn --no-warnings src/server.ts"
   },
   "keywords": [],
   "author": "Manuel Jaime",
@@ -24,8 +23,10 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.0.3",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   }
 }
